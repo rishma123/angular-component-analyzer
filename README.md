@@ -1,57 +1,27 @@
 # 🚀 Angular Component Analyzer
 
-**AI-powered documentation for Angular components — without the fake UI previews.**
+Analyze, document, and improve Angular components with structured, AI-driven insights.
 
-Most AI tools try to render your components and fail. This one analyzes structure, inputs, outputs, and behavior — then gives you **accurate, actionable insights**.
+---
 
-**What you get:**
-- Automatic `@Input` and `@Output` detection
-- Behavior insights from component logic
-- Health scoring with actionable suggestions
-- **Confidence indicators** showing analysis reliability
-- Clean MDX exports for design systems
+## ✨ Overview
 
-No guesswork. No misleading mockups. Just reliable developer documentation
+Angular Component Analyzer is a developer tool that parses Angular components and generates clear, structured documentation along with useful insights.
+
+It focuses on analyzing component inputs, outputs, and behavior to provide reliable and developer-friendly output.
 
 ---
 
 ## 🔍 Features
 
-* 📥 Detects `@Input()` properties with types and default values
-* 📤 Detects `@Output()` EventEmitters with inferred descriptions
-* 🧠 Generates **behavior insights** based on component logic
-* 🧩 Provides **component structure** (no fake UI rendering)
-* 📊 Calculates a transparent **component health score**
-* 💡 Suggests improvements based on best practices
-* 📄 Exports clean **MDX documentation**
-* 🎯 Includes **analysis confidence** to indicate reliability
-
----
-
-## 🎯 Why This Tool?
-
-Most AI-based tools generate UI previews that quickly become inaccurate for real-world components.
-
-This tool takes a different approach:
-
-> ❌ No visual mockups  
-> ✅ Clear, reliable, developer-focused insights
-
----
-
-## 🧠 Analysis Confidence (Wow Feature)
-
-Each analysis includes a confidence level to indicate reliability:
-
-```text
-Analysis Confidence: Medium
-
-Reasons:
-- External template not analyzed
-- Conditional logic detected
-```
-
-This ensures developers understand **when to trust the output and when to review manually**.
+* Detects `@Input()` properties with types and default values
+* Detects `@Output()` EventEmitters with inferred descriptions
+* Generates behavior insights based on component logic
+* Provides component structure summaries
+* Calculates a transparent component health score
+* Suggests improvements based on best practices
+* Exports clean MDX documentation
+* Includes analysis confidence to indicate reliability
 
 ---
 
@@ -72,8 +42,9 @@ Behavior Insights:
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ installed
-- A [Groq API key](https://console.groq.com/keys) (free tier available)
+
+* Node.js 18+ installed
+* A Groq API key (free tier available)
 
 ### Installation
 
@@ -97,7 +68,7 @@ GROQ_API_KEY=your_groq_api_key_here
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open http://localhost:3000 in your browser.
 
 ---
 
@@ -106,7 +77,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 * Design system documentation
 * Component auditing and review
 * Developer onboarding
-* Rapid documentation generation
+* Documentation generation
 
 ---
 
@@ -115,13 +86,13 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 * Test case generation
 * External template analysis (`templateUrl`)
 * Custom developer annotations (`@doc`)
-* Advanced accessibility checks
+* Accessibility checks
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests.
+Contributions are welcome. Feel free to open issues or submit pull requests.
 
 ---
 
@@ -133,8 +104,5 @@ MIT License
 
 ## 👤 Author
 
-Built by Rishma Merkaje Nanaiah
+Rishma Merkaje Nanaiah
 
----
-
-## ⭐ If you find this useful, consider giving it a star!
