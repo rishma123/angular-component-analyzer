@@ -44,7 +44,7 @@ Behavior Insights:
 ### Prerequisites
 
 * Node.js 18+ installed
-* A Groq API key (free tier available)
+* A Groq API key (only for local development - [free tier available](https://console.groq.com/keys))
 
 ### Installation
 
@@ -56,16 +56,24 @@ npm install
 
 ### Environment Setup
 
+**For Local Development:**
+
 Create a `.env.local` file in the root directory:
 
 ```bash
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-**Important:**
-- The API key is required for AI-powered analysis features
-- Never commit `.env.local` or any file containing secrets to git
-- Use `.env.example` as a template (already included in the repository)
+Get your free API key at [https://console.groq.com/keys](https://console.groq.com/keys).
+
+**For Production (Vercel):**
+
+The API key is securely configured on the server. Users of the deployed app do not need to provide their own API key.
+
+**Security Notes:**
+- Never commit `.env.local` to version control
+- The API key is only used server-side and is not exposed to users
+- Use `.env.example` as a template (included in this repository)
 
 ### Run the App
 
