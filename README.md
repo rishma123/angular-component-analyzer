@@ -62,6 +62,11 @@ Create a `.env.local` file in the root directory:
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
+**Important:**
+- The API key is required for AI-powered analysis features
+- Never commit `.env.local` or any file containing secrets to git
+- Use `.env.example` as a template (already included in the repository)
+
 ### Run the App
 
 ```bash

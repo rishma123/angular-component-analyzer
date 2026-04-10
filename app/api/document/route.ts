@@ -1,12 +1,23 @@
 import Groq from "groq-sdk";
 import { NextResponse } from "next/server";
 
-const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
-});
-
 export async function POST(request: Request) {
   try {
+    // Validate environment variable
+    if (!process.env.GROQ_API_KEY) {
+      return NextResponse.json(
+        { 
+          error: "API key not configured",
+          message: "AI analysis is disabled. Please add GROQ_API_KEY to your .env.local file to enable it."
+        },
+        { status: 503 }
+      );
+    }
+
+    const groq = new Groq({
+      apiKey: process.env.GROQ_API_KEY,
+    });
+
     const { code } = await request.json();
 
     if (!code) {

@@ -97,6 +97,8 @@ export class StatusBadgeComponent {
     } catch (err: any) {
       if (err.message?.includes("JSON")) {
         setError("The AI response was not valid. Please try again — this sometimes happens with complex components.");
+      } else if (err.message?.includes("503")) {
+        setError("AI analysis is disabled. Add GROQ_API_KEY to .env.local to enable it. See README for setup instructions.");
       } else if (err.message?.includes("500")) {
         setError("Server error. Please restart the app and try again.");
       } else if (err.message?.includes("fetch")) {
